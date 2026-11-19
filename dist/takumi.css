@@ -1,0 +1,51 @@
+/* Generado desde tokens.json por scripts/generate.py. No editar a mano. */
+:root {
+  --tk-corte-sm: 10px; --tk-corte-md: 14px; --tk-corte-lg: 22px;
+  --tk-radio: 0; --tk-borde: 1px;
+  --tk-fuente-ui: "Outfit", system-ui, sans-serif; --tk-fuente-datos: "JetBrains Mono", ui-monospace, monospace;
+  --tk-curva: cubic-bezier(0.2, 0.7, 0.2, 1.0);
+  --tk-rapido: 120ms; --tk-normal: 200ms; --tk-lento: 300ms; --tk-revelado: 800ms;
+}
+:root, :root[data-tema="oscuro"] {
+  --tk-fondo: #000000;
+  --tk-panel: #080808;
+  --tk-elevado: #111111;
+  --tk-tinta: #f2f2f2;
+  --tk-tintaSuave: #c9c9c9;
+  --tk-tintaApagada: #8c8c8c;
+  --tk-tintaTenue: #4a4a4a;
+  --tk-linea: #1c1c1c;
+  --tk-lineaAlta: #3a3a3a;
+  --tk-inversoFondo: #f2f2f2;
+  --tk-inversoTinta: #000000;
+}
+:root[data-tema="claro"] {
+  --tk-fondo: #f4f4f4;
+  --tk-panel: #ffffff;
+  --tk-elevado: #ebebeb;
+  --tk-tinta: #0a0a0a;
+  --tk-tintaSuave: #333333;
+  --tk-tintaApagada: #6b6b6b;
+  --tk-tintaTenue: #b0b0b0;
+  --tk-linea: #e0e0e0;
+  --tk-lineaAlta: #c0c0c0;
+  --tk-inversoFondo: #0a0a0a;
+  --tk-inversoTinta: #f4f4f4;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-tema]) {
+  --tk-fondo: #f4f4f4;
+  --tk-panel: #ffffff;
+  --tk-elevado: #ebebeb;
+  --tk-tinta: #0a0a0a;
+  --tk-tintaSuave: #333333;
+  --tk-tintaApagada: #6b6b6b;
+  --tk-tintaTenue: #b0b0b0;
+  --tk-linea: #e0e0e0;
+  --tk-lineaAlta: #c0c0c0;
+  --tk-inversoFondo: #0a0a0a;
+  --tk-inversoTinta: #f4f4f4;
+}
+}
+/* Corte diagonal del logo: esquina superior derecha */
+.tk-corte { clip-path: polygon(0 0, calc(100% - var(--tk-corte-lg)) 0, 100% var(--tk-corte-lg), 100% 100%, 0 100%); }
